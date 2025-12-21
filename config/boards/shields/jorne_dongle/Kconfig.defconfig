@@ -1,0 +1,6 @@
+if SHIELD_JORNE_DONGLE
+
+config ZMK_KEYBOARD_NAME
+    default "Jorne Dongle"
+
+endif

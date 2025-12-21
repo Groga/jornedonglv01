@@ -1,0 +1,10 @@
+# Jorne shields
+
+config SHIELD_JORNE_LEFT
+    bool "Jorne left shield"
+
+config SHIELD_JORNE_RIGHT
+    bool "Jorne right shield"
+
+config SHIELD_JORNE_DONGLE
+    bool "Jorne dongle shield"

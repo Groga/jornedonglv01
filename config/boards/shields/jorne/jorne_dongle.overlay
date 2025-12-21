@@ -1,0 +1,25 @@
+
+/* Подключаем определение основной клавиатуры Jorne */
+#include "../jorne/jorne.dtsi"
+
+/ {
+    chosen {
+        /* Используем фейковый сканер клавиш, так как физических кнопок нет */
+        zmk,kscan = &mock_kscan;
+    };
+
+    /* Определяем мок-объект для сканера */
+    mock_kscan: kscan_0 {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
+    };
+
+
+};
+
+/* Отключаем сканер матрицы GPIO, так как у донгла его нет */
+&kscan0 {
+    status = "disabled";
+};

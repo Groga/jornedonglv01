@@ -1,0 +1,15 @@
+manifest:
+  remotes:
+  - name: zmkfirmware
+    url-base: https://github.com/zmkfirmware
+  projects:
+  - name: zmk
+    remote: zmkfirmware
+    revision: main
+    import: app/west.yml
+  - name: zmk-studio-helper
+    remote: zmkfirmware
+    revision: main
+    path: optional/modules/zmk-studio-helper
+  self:
+    path: config
