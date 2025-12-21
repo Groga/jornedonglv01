@@ -11,8 +11,3 @@ include:
   - board: nice_nano_v2
     shield: jorne_right
 
-buids:
-  jorne_left: zmk
-  jorne_roght: zmk
-  jorne_dongl: zmk
-
